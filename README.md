@@ -1,12 +1,33 @@
-# Niamul71
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="styles.css">
-<form action="https://www.facebook.com/messages/t/realniamul71" method="GET" target="_blank">
-    <input type="text" name="name" placeholder="Niamul Jannat ">
-    <input type="submit" value="Contact With Me">
-</form>
+import requests
+from bs4 import BeautifulSoup
+
+# Set the target URL
+url = 'https://example.com'
+
+# Send a GET request to the target URL
+response = requests.get(url)
+
+# Parse the HTML content of the response
+soup = BeautifulSoup(response.text, 'html.parser')
+
+# Extract relevant information from the HTML
+important_data = soup.find('div', class_='important-data').text
+
+# Manipulate the data as needed
+manipulated_data = important_data.upper()
+
+# Prepare the payload for the hacking operation
+payload = {
+    'target': 'vulnerable_system',
+    'action': 'exploit',
+    'data': manipulated_data
+}
+
+# Send the payload to the target system
+hacked_response = requests.post('https://vulnerable-system.com', data=payload)
+
+# Check if the hacking attempt was successful
+if hacked_response.status_code == 200:
+    print("Hacking successful! Target system compromised.")
+else:
+    print("Hacking attempt failed. Retry with different parameters.")
