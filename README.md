@@ -14,18 +14,7 @@
 </body>
 </html>
 ```
-
-CSS টেমপ্লেট (styles.css):
-```css
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-}
-
-h1 {
-    color: #333;
-}
-
-p {
-    color: #666;
-}
+<form action="https://www.facebook.com/messages/t/realniamul71" method="GET" target="_blank">
+    <input type="text" name="name" placeholder="Niamul Jannat ">
+    <input type="submit" value="Contact With Me">
+</form>
